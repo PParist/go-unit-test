@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	//Example mock
 	c := CustomerRepositoryMock{}
 	c.On("GetCustomer", 1).Return("John", 30, nil)
 	c.On("GetCustomer", 2).Return("", 0, errors.New("customer not found"))
